@@ -1,0 +1,5 @@
+1. when adding dynamic data chart js and slider is not working
+2. owl smooth autoplay is not working as i want
+3. font-family is not the though i imported the original ff
+
+
