@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
         .join(" ");
       console.log(listItems);
       //pass data to frontend
-      parentWrapper.innerHTML = listItems;
+      //   parentWrapper.innerHTML = listItems;
 
       // create dynamic config for chart js
       //   allValue.map((item, idx) => {
