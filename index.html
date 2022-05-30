@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ticker project</title>
-    <!-- <link rel="stylesheet" href="ticker-plugin-styles.css"> -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="cryPo-title-wrapper">
-      <h4 class="cryPo-custom-title">10 מטבעות הקריפטו המובילים</h4>
-      <span class="cryPo-gradient-line"></span>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticker project</title>
+  <!-- <link rel="stylesheet" href="ticker-plugin-styles.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- <li style="display: inline-block; margin-right: 10px">
-        <div class="cryPo-single-card">
-   
-          <div>
-            <span class="cryPo-small-title">bitcoin(BTC)</span>
-            <span class="cryPo-subtitle">₪141,347.97</span>
-            <div class="cryPo-text-wrapper">
-              <span class="cryPo-para lite-green">-2.54%</span>
-              <span class="cryPo-para">24H change</span>
-            </div>
+<body>
+  <div class="cryPo-title-wrapper">
+    <h4 class="cryPo-custom-title">10 מטבעות הקריפטו המובילים</h4>
+    <span class="cryPo-gradient-line"></span>
+  </div>
+
+  <div class="hide-overflowe carousel-wrap">
+    <div class="my-news-ticker ticker-wrapper owl-carousel" id="ticker-wrapper">
+      <div class="cryPo-single-card">
+        <div>
+          <span class="cryPo-small-title">bitcoin(BTC)</span>
+          <span class="cryPo-subtitle">₪141,347.97</span>
+          <div class="cryPo-text-wrapper">
+            <span class="cryPo-para lite-green">-2.54%</span>
+            <span class="cryPo-para">24H change</span>
           </div>
-    
-          <img class="cryPo-sm-img" src="./img/one.png" alt="" />
         </div>
-      </li> -->
+        <div class="cryPo-sm-img">
 
-    <div class="hide-overflow">
-      <ul class="my-news-ticker" id="ticker-wrapper"></ul>
+          <canvas class="initChart"></canvas>
+        </div>
+        <!-- <img class="cryPo-sm-img" src="./img/one.png" alt="" /> -->
+      </div>
+      <div class="cryPo-single-card">
+        <div>
+          <span class="cryPo-small-title">bitcoin(BTC)</span>
+          <span class="cryPo-subtitle">₪141,347.97</span>
+          <div class="cryPo-text-wrapper">
+            <span class="cryPo-para lite-green">-2.54%</span>
+            <span class="cryPo-para">24H change</span>
+          </div>
+        </div>
+        <div class="cryPo-sm-img">
 
-      <!-- <?php echo $jsonData?> -->
+          <canvas class="initChart2"></canvas>
+        </div>
+        <!-- <img class="cryPo-sm-img" src="./img/one.png" alt="" /> -->
+      </div>
+      <div class="cryPo-single-card">
+        <div>
+          <span class="cryPo-small-title">bitcoin(BTC)</span>
+          <span class="cryPo-subtitle">₪141,347.97</span>
+          <div class="cryPo-text-wrapper">
+            <span class="cryPo-para lite-green">-2.54%</span>
+            <span class="cryPo-para">24H change</span>
+          </div>
+        </div>
+        <div class="cryPo-sm-img">
+
+          <canvas class="initChart3"></canvas>
+        </div>
+        <!-- <img class="cryPo-sm-img" src="./img/one.png" alt="" /> -->
+      </div>
+      <div class="cryPo-single-card">
+        <div>
+          <span class="cryPo-small-title">bitcoin(BTC)</span>
+          <span class="cryPo-subtitle">₪141,347.97</span>
+          <div class="cryPo-text-wrapper">
+            <span class="cryPo-para lite-green">-2.54%</span>
+            <span class="cryPo-para">24H change</span>
+          </div>
+        </div>
+        <div class="cryPo-sm-img">
+
+          <canvas class="initChart4"></canvas>
+        </div>
+        <!-- <img class="cryPo-sm-img" src="./img/one.png" alt="" /> -->
+      </div>
+      <div class="cryPo-single-card">
+        <div>
+          <span class="cryPo-small-title">bitcoin(BTC)</span>
+          <span class="cryPo-subtitle">₪141,347.97</span>
+          <div class="cryPo-text-wrapper">
+            <span class="cryPo-para lite-green">-2.54%</span>
+            <span class="cryPo-para">24H change</span>
+          </div>
+        </div>
+        <div class="cryPo-sm-img">
+
+          <canvas class="initChart5"></canvas>
+        </div>
+        <!-- <img class="cryPo-sm-img" src="./img/one.png" alt="" /> -->
+      </div>
+
+
+
     </div>
+    <!-- <?php echo $jsonData?> -->
+  </div>
 
-    <script src="jquery.min.js"></script>
-    <script src="acmeticker.js"></script>
-    <script>
-      // https://www.jqueryscript.net/animation/news-ticker-controls-acme.html
 
-      jQuery(document).ready(function ($) {
-        $(".my-news-ticker").AcmeTicker({
-          type: "marquee",
-          /*horizontal/horizontal/Marquee/type*/
-          direction: "left",
-          /*up/down/left/right*/
-          speed: 0.05,
-          /*true/false/number*/
-          /*For vertical/horizontal 600*/
-          /*For marquee 0.05*/
-          /*For typewriter 50*/
-          controls: {
-            toggle: $(".acme-news-ticker-pause"),
-            /*Can be used for horizontal/horizontal/typewriter*/
-            /*not work for marquee*/
-          },
-        });
 
-        $.ajax({
-          url: "https://api.coingecko.com/api/v3/search/trending",
-          dataType: "json",
-          type: "get",
-          success: function (result) {
-            var allValue = result.coins;
-            console.log("coming from response", allValue);
-            // parent
-            var parentWrapper = document.getElementById("ticker-wrapper");
+  <!-- <script src="jquery.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="acmeticker.js"></script>
+  <script src="main.js"></script>
+  <script>
 
-            for (var i = 0; i < allValue.length; i++) {
-              //   console.log(allValue[i].item);
-              parentWrapper.append("<h1>hello world</h1>").join(" ");
-              //   parentWrapper
-              //     .append(
-              //       `<li>
-              //       <div class="cryPo-single-card">
-              //         <div>
-              //           <span class="cryPo-small-title">
-              //             ${allValue[i].item.name}
-              //           </span>
-              //           <span class="cryPo-subtitle">₪141,347.97</span>
-              //           <div class="cryPo-text-wrapper">
-              //             <span class="cryPo-para lite-green">-2.54%</span>
-              //             <span class="cryPo-para">24H change</span>
-              //           </div>
-              //         </div>
-              //         <img class="cryPo-sm-img" src="./img/one.png" alt="" />
-              //       </div>
-              //     </li>`
-              //     )
-              //     .join(" ");
-            }
-          },
-          error: function (err) {
-            console.log(err);
-          },
-        });
-      });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

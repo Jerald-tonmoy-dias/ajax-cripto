@@ -1,9 +1,33 @@
+/* noto-sans-hebrew-regular - hebrew */
+@font-face {
+    font-family: 'Noto Sans Hebrew';
+    font-style: normal;
+    font-weight: 400;
+    src:   url('./fonts/noto-sans-hebrew-v36-hebrew-regular.woff2') format('woff2');
+  }
+  /* noto-sans-hebrew-500 - hebrew */
+  @font-face {
+    font-family: 'Noto Sans Hebrew';
+    font-style: normal;
+    font-weight: 500;
+    src:  url('./fonts/noto-sans-hebrew-v36-hebrew-500.woff2') format('woff2');
+  }
+  /* noto-sans-hebrew-700 - hebrew */
+  @font-face {
+    font-family: 'Noto Sans Hebrew';
+    font-style: normal;
+    font-weight: 700;
+    src:  url('./fonts/noto-sans-hebrew-v36-hebrew-700.woff2') format('woff2');
+  }
 
+/* hebo font */
+  @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+  
 .hide-overflow {
     /* overflow: hidden;
     position: relative; */
-    overflow-x: hidden;
-    height: 200px;
+    /* overflow-x: hidden;
+    height: 200px; */
 }
 .cyrPo-card-wrapper {
     display: flex;
@@ -14,10 +38,10 @@
 
 }
 .cryPo-custom-title{
+    font-family: 'Noto Sans Hebrew';
     font-weight: bold;
     font-size: 40px;
     color: #000;
-    font-family: noto_sans;
     padding-bottom: 20px;
     margin: 0;
 
@@ -37,8 +61,11 @@
 .cyrPo-card-wrapper {
     display: flex;
 }
+.ticker-wrapper {
+    display: flex;
+    align-items: center;
+}
 .cryPo-single-card {
-    width: 268px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0px 4px rgba(0, 0, 0,.25);
@@ -46,8 +73,13 @@
     align-items: center;
     justify-content: space-between;
     margin: 10px;
+
+}
+.cryPo-right-side {
+margin-right: 20px;
 }
 .cryPo-small-title {
+    font-family: 'Noto Sans Hebrew';
     display: block;
     font-weight: 500;
     font-size: 20px;
@@ -65,7 +97,8 @@
     display: flex;
 }
 .cryPo-para {
-    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
     font-weight: 400;
     display: block;
     margin-right: 10px;
@@ -74,6 +107,14 @@
     color: #70BD7D;
 }
 .cryPo-sm-img {
-    width: 80px;
-    right: 0;
+position: relative;
+width: 90px;
+height: 75px;
 }
+
+
+
+
+
+
+/* ashogfdais */
